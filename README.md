@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+## Inspiration 💡
+**Water is the most critical resource for development**. Globally, **Agriculture** accounts for over **80%** of our water usage, and a significant amount of water is *wasted* in all agricultural activities. This happens because the majority of the irrigation systems that farmers use are *manual* and even the automatic irrigation systems irrigate regardless of the soil and weather conditions. There are several places which remain highly vulnerable to this water crisis in the coming years. Affordable and efficient methods in water management will be key to the production of food and economic security for sustained livelihoods in both irrigated and rain-fed scenarios.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We believe with creative thinking and a proper approach we can innovate novel methods that’ll help us tackle the same seamlessly. Thus, we build, **Hydroptimum** ✨
 
-## Available Scripts
+![toplogo-devpost.png](https://i.postimg.cc/G2DnMrJz/toplogo-devpost.png)
 
-In the project directory, you can run:
+## What it does 🤔
+With the help of AI, anyone can provide simple information about their crops like planting location, type of crop, and type of soil to obtain personalized recommendations on the volume of water necessary to achieve optimal crop production. Then users select what area of the farm they want to get an estimate for, and Hydroptimum automatically combines the data with weather forecasts and machine learning to provide accurate crop water requirement estimations. Hydroptimum gives detailed statistics including gallons of water that could be saved and dollars unnecessarily spent. Users are incentivised to make their farming more efficient, and in doing so, help Earth solve its water problem.
 
-### `npm start`
+> **Targeted Track** : **Sustainability**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How we built it ⚙️
 
-### `npm test`
+First and foremost, it is Crafted with 💙. 
+We are using ReactJs as the Front-end framework which's fueled via MaterialUI CSS. The authentication is performed via Firebase, then inside the dashboard, we leverage few 3rd party API's to retrieve *Weather Data*, and other climatic attributes. The polygon plot is made using *Leaflet.js* on the map-surface. To obtain the total surface-area, we used [this](https://gis.stackexchange.com/questions/8495/converting-longitude-and-latitude-coordinates-to-square-miles/8496#8496) formula.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![System-Architecture-modded.png](https://i.postimg.cc/BZFbwPq5/System-Architecture-modded.png)
 
-### `npm run build`
+Moreover, we are also leveraging **MageAI**'s platform for crafting our ML model (followed by specific steps, e.g. Training, Evaluating, & even for Hyperparameter Tuning). The dataset is prepared by combining 2-3 different Kaggle datasets by intersecting common attributes & then finetuning.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Main-Mage-AI.gif](https://i.postimg.cc/PqJL7y43/Main-Mage-AI.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![break](https://res.cloudinary.com/devpost/image/fetch/s--B0JC0SQ_--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://ipfs.infura.io/ipfs/QmaNVVQELQk7EVBZRCWhNbdxDbMBVU5a4koeH7yBK1dojC)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Design 🎨
 
-### `npm run eject`
+We were heavily inspired by the revised version of **Double-Diamond** design process, which not only includes visual design, but a full-fledged research cycle in which you must discover and define your problem before tackling your solution & then finally deploy it.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Double-Diamond](https://i.postimg.cc/kMR56cRT/Double-Diamond.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> 1. **Discover**: a deep dive into the problem we are trying to solve.
+> 2. **Define**: synthesizing the information from the discovery phase into a problem definition.
+> 3. **Develop**: think up solutions to the problem.
+> 4. **Deliver**: pick the best solution and build that.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Moreover, we utilized design tools like Figma,  Photoshop & Illustrator to prototype our designs before doing any coding. Through this, we are able to get iterative feedback so that we spend less time re-writing code.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Figma-Devpost-snap-1.png](https://i.postimg.cc/Ghz702Kt/Figma-Devpost-snap-1.png)
 
-## Learn More
+![break](https://res.cloudinary.com/devpost/image/fetch/s--B0JC0SQ_--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://ipfs.infura.io/ipfs/QmaNVVQELQk7EVBZRCWhNbdxDbMBVU5a4koeH7yBK1dojC)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Research 📚
+Research is the key to empathizing with users: we found our specific user group early and that paves the way for our whole project. Here are a few of the resources that were helpful to us —
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The global value of water in agriculture : https://www.pnas.org/content/117/36/21985
+- California Agricultural Production Statistics : https://www.cdfa.ca.gov/Statistics
+- Water Wastage in Agriculture : https://worldfinancialreview.com/water-wastage-in-agriculture
+- Water Usage @ Agricultural Industry : https://htt.io/water-usage-in-the-agricultural-industry
+- Sustainable Water Management in Agriculture : https://bit.ly/3pkgCVL
+- Sustainable Agricultural Water Management: https://bit.ly/33USIIQ
+- Water Pollution from Agriculture : https://www.fao.org/3/i7754e/i7754e.pdf
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![research.png](https://i.postimg.cc/pL3zFbkR/research.png)
 
-### Analyzing the Bundle Size
+**CREDITS**
+- **Design Resources** : Freepik
+- **Icons** : Icons8, fontawesome
+- **Font** : Roboto / Orbitron / Raleway / Righteous
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![break](https://res.cloudinary.com/devpost/image/fetch/s--B0JC0SQ_--/c_limit,f_auto,fl_lossy,q_auto:eco,w_900/https://ipfs.infura.io/ipfs/QmaNVVQELQk7EVBZRCWhNbdxDbMBVU5a4koeH7yBK1dojC)
 
-### Making a Progressive Web App
+## Challenges we ran into 😤
+We face some challenges during the hackathon. One of the major challenges was the time difference. All of us are in different time zones which creates some communication challenges.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Gathering Data**: This was by far the most tiresome work that we all invested in our time in. We did extensive research while collecting data & datasets from various sources, including Kaggle.
+- **MageAI**: This is the first time we're used MageAI for turning our ideas into reality. Initially it seemed hard, but it kept on being simple as we moved forward.
+- **Optimizing Datasets**: Manually labeling and filtering datasets takes a lot of time which had to be done for training the model.
+- **React components**: Transforming highly dynamic ideas created in Figma into React Components and Layouts.
+- **Integration of Modules** - Connecting the Various APIs, SDK’s and JSON data with front-end UI Components was challenging!
+- **Filtering specific plants** - As the title says, every plant is actually dependent on the soil, climate & root type, which defines it's growth, height, colors, etc. All of these were very *sensitive data* for us as we took it into consideration.
 
-### Advanced Configuration
+## Accomplishments that we're proud of ✨
+We are proud of finishing the project on time which seemed like a tough task as we started working on it quite late due to other commitments and were also able to add most of the features that we envisioned for the app during ideation. Moreover, we learned a lot about new web technologies and libraries that we could incorporate into our project to meet our unique needs. And as always, working overnight was pretty fun! :)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project was especially an achievement for us because this time the experience was very different than what we have while building typical hackathon projects, which also includes heavy brainstorming, extensive research, and yes, hitting the final pin on the board.
 
-### Deployment
+## What we learned 🙌
+**Proper sleep is very important! :p** Well, a lot of things, both summed up in technical & non-technical sides. Also not to mention, we enhanced our googling and Stackoverflow searching skill during the hackathon :)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![team-transp.png](https://i.postimg.cc/QCQMBcFQ/team-transp.png)
 
-### `npm run build` fails to minify
+## What's next for Hydroptimum 🚀
+*We believe that our App has great potential*. Besides, we plan to expand it's capabilities by *incorporating other languages*. Our next step is to expand the number of variables taken into account from our dataset. This will not only permit a *greater audience* but also facilitate the exchange of diverse information and technical expertise globally. Additionally, we intend to continue improving the accuracy to provide better accuracy & low-spec support. 
+ 
+**Note ⚠️ — API credentials have been revoked. If you want to run the same on your local, use your own credentials.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![footer-devpost.png](https://i.postimg.cc/6qXWNTMy/footer-devpost.png)
