@@ -1,0 +1,69 @@
+.wrapper {
+    background-image: url("../../photos/login_background.png");
+    /* Set rules to fill background */
+    min-height: 100vh;
+    min-width: 100vw;
+        
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+        
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;  
+    color: white;
+}
+
+#greetings {
+    margin: 3rem;
+    font-weight: 600;
+}
+
+#greetings h1{
+    font-size: 5em;
+}
+
+#greetings .username{
+    color: #F2F53B;
+}
+
+.row {
+    margin-bottom: 2em;
+}
+
+.col-form-label {
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: right;
+    width: 100%;  
+}
+
+.my-input-group{
+    border-radius: 20px;
+}
+
+.my-container .row button {
+    background-image: url("../../photos/upward-arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+    
+}
+
+.btn-container{
+    text-align: center;
+    width: 100%;
+}
+
+.submit-btn {
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: #272727;
+    color: white;
+}
+
+.submit-btn:hover {
+   color: white;
+}
