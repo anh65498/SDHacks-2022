@@ -1,6 +1,8 @@
 .my-container {
     height: 100vh;
     width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 /* Left Side Bar */
@@ -103,6 +105,62 @@
 }
 
 /* Map */
-.my-map {
-    padding-bottom: 10rem;
+/* .my-map {
+  
+} */
+
+.map-map {
+    height: 200px;
+    width: auto;
+}
+
+.my-map a, #anchor{
+    display: inline !important;
+}
+
+#left{
+    /* background-image: url(../../photos/map.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+     */
+    padding-left: 0;
+    padding-right: 0;
+    /* width: 4rem; */
+    height: 340px;
+    width: 600px;
+    margin: 0px 20px;
+}
+
+#right{
+    /* background-image: url(../../photos/map.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+     */
+    padding-left: 0;
+    padding-right: 0;
+    /* width: 4rem; */
+    height: 340px;
+    width: 250px;
+    margin-left: 30px;
+}
+
+
+
+.leaflet-container {
+    max-height: 200px; 
+    transform: scale(0.5);
+}
+
+.leaflet-control-container {
+    display: none;
+}
+
+.summary {
+    background-image: url(../../photos/navbar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    padding-right: 0;
+    /* width: 4rem; */
+    height: 100%;
 }

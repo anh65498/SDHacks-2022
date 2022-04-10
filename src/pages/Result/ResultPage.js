@@ -1,8 +1,11 @@
 import React from "react";
 import "./Result.css";
+// import Map from "../components/Map";
 import Thermometer from "../../photos/Thermometer.png";
 import Droplet from "../../photos/droplet.png";
 import Rain from "../../photos/Rain.png";
+import Map from "../../photos/map.png";
+import Report from "../../photos/report.png";
 
 const Result = () => {
   return (
@@ -92,11 +95,18 @@ const Result = () => {
               <div class="row my-map mt-4">
                 <h3>Manage your fields</h3>
                 <h6>Select the area on the figure to plot</h6>
-                {/* Map */}
-                <div class="row">
-                  <div class="col-6">Hi</div>
-                  <div class="col">Hel</div>
-                </div>
+                {/* <a href="https://codesandbox.io/s/leaflet-hydroptimum-d6skuh?file=/src/components/Geoman.js"> */}
+                <img src={Map} id="left" />
+                {/* </a> */}
+                {/* Easy way out: Have a button that go to a new page */}
+                {/* Hard way: change the CSS of the map */}
+                {/* <div class="map-map">
+                    <Map />
+                  </div> */}
+
+                {/* <a href="https://codesandbox.io/s/leaflet-hydroptimum-d6skuh?file=/src/components/Geoman.js"> */}
+                <img src={Report} id="right" />
+                {/* </a> */}
               </div>
             </div>
           </div>

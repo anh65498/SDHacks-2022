@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate, useNavigate } from "react-router";
 import Navbar from "../components/Navbar";
 import "./Homepage.css";
 
@@ -9,7 +10,7 @@ const Homepage = () => {
       <div className="container wrapper">
         <div id="greetings">
           <h1>
-            Hey <span class="username">Zach</span>, 👋🏻
+            Hey <span class="username">Anh</span>, 👋🏻
           </h1>
           <h4>Fill out the following details mentioned ...</h4>
         </div>

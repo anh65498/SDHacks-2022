@@ -13,12 +13,11 @@ const LoginPage = () => {
         .signInWithPopup(provider2)
         .then((result) => {
           // runs even if sign up fails
-          alert("loggin in!");
+          // alert("loggin in!");
         })
         .then(() => {
           setAuth(true);
         });
-      setAuth(true);
     } catch (error) {
       alert(error);
     }
@@ -26,8 +25,15 @@ const LoginPage = () => {
 
   // {
   //   console.log(isAuth);
-  //   isAuth && <Navigate replace to="/ " />;
+  //   isAuth && <Navigate to="/ " replace />;
   // }
+
+  let navigate = useNavigate();
+  useEffect(() => {
+    if (isAuth) {
+      return navigate("/");
+    }
+  }, [isAuth]);
 
   useEffect(() => {
     isAuth && <Navigate replace to="/ " />;
