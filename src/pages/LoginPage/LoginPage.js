@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Navigate, useNavigate } from "react-router";
 import "./loginpage.css";
 import db, { provider2 } from "../../firebase/config";
 
 const LoginPage = () => {
+  const [isAuth, setAuth] = useState(false);
+  // const navigate = useNavigate();
+
   const handleLoginWithGoogle = () => {
     try {
-      db.auth().signInWithPopup(provider2);
-      history.push("/");
+      db.auth()
+        .signInWithPopup(provider2)
+        .then((result) => {
+          // runs even if sign up fails
+          alert("loggin in!");
+        })
+        .then(() => {
+          setAuth(true);
+        });
+      setAuth(true);
     } catch (error) {
       alert(error);
     }
   };
 
-  return (
-    // <div className="wrapper d-flex flex-column align-items-center">
-    //   <div className="content">
-    //     <h1 id="title">Login</h1>
-    //     <button onClick={handleLoginWithGoogle} className="btn btn-primary">
-    //       Log In with Google
-    //     </button>
-    //   </div>
-    // </div>
+  // {
+  //   console.log(isAuth);
+  //   isAuth && <Navigate replace to="/ " />;
+  // }
 
+  useEffect(() => {
+    isAuth && <Navigate replace to="/ " />;
+  });
+  return (
     <div className="container wrapper">
       <div className="jumbotron">
         <div className="row">

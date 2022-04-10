@@ -1,0 +1,14 @@
+#my-navbar {
+    background-color: transparent;
+    margin: 0 2em;
+    height: 3rem;
+}
+
+#logo {
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+#brand {
+    height: 2.5rem;
+}

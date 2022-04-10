@@ -1,0 +1,108 @@
+.my-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Left Side Bar */
+.left-side-bar {
+    background-color: #272727;
+    background-image: url(../../photos/navbar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    width: 4rem;
+}
+
+/* Main Content */
+.main-content {
+    background-image: url(../../photos/login_background.png);
+    min-height: 100vh;
+    min-width: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+.main-content .backdrop{
+    background-color: #E2FFEE;
+    padding-top: 1rem;
+    padding-right: -30rem;   /* this should match with .right-side-bar's right */
+
+}
+
+.my-cards {
+    margin-top: 2rem;
+    max-width: 65rem;   /* magic number */
+}
+
+.my-card {
+    border-radius: 20px;
+    border: 1px solid #857F7F;
+    margin: 0 1rem;
+    padding: 0.25rem 1rem;
+}
+
+.my-card .card-title{
+    margin-bottom: 0;
+}
+
+/* align text with button */
+.temp-card .card-subtitle, .humidity-card .card-subtitle, .precipitation-card .card-subtitle {
+    padding-top: 0.5rem;
+}
+
+.my-card img {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem 1rem;
+}
+
+.my-card 
+
+/* values */
+.temp, .humidity, .precipitation {
+    font-weight: bolder;
+    font-size: 1.75rem;
+}
+
+.temp-card {
+    background-color: #D1EFF5;
+}
+
+.humidity-card {
+    background-color: #F0F5D1;
+}
+
+.precipitation-card {
+    background-color: #D1EEDB;
+}
+
+.result-btn {
+    border-radius: 20px;
+    padding: 0.10rem 2rem;
+}
+
+/* Right Side Bar */
+.right-side-bar {
+    background-image: url(../../photos/right-sidebar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-left: 0 !important;    
+    padding-right: 0 !important;
+
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    
+}
+
+/* Map */
+.my-map {
+    padding-bottom: 10rem;
+}
