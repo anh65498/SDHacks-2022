@@ -18,6 +18,7 @@
 
 #greetings {
     margin: 3rem;
+    margin-top: 7rem;
     font-weight: 600;
 }
 
@@ -29,9 +30,9 @@
     color: #F2F53B;
 }
 
-.row {
+/* .my-row {
     margin-bottom: 2em;
-}
+} */
 
 .col-form-label {
     font-size: 1.25em;
@@ -44,7 +45,7 @@
     border-radius: 20px;
 }
 
-.my-container .row button {
+.my-container .row .hp-button {
     background-image: url("../../photos/upward-arrow.png");
     background-repeat: no-repeat;
     background-size: contain;

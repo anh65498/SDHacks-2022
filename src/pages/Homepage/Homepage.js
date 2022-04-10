@@ -15,7 +15,7 @@ const Homepage = () => {
         </div>
         <form class="container my-container">
           {/* location input field */}
-          <div class="row">
+          <div class="row mb-5">
             <div class="col-2">
               <label for="location" class="col-form-label">
                 Enter your Location
@@ -30,7 +30,7 @@ const Homepage = () => {
                   placeholder="9450 Gilman Drive, La Jolla, CA 92092-0100"
                 />
                 <button
-                  class="btn btn-outline-secondary"
+                  class="btn btn-outline-secondary hp-button"
                   type="button"
                   id="button-addon2"
                 >
@@ -48,7 +48,7 @@ const Homepage = () => {
               </label>
             </div>
             <div class="col-1">
-              <div class="input-group mb-3">
+              <div class="input-group 5">
                 <select class="form-select" id="soil-type">
                   <option selected>Clay</option>
                   <option value="1">Loam</option>
@@ -60,7 +60,7 @@ const Homepage = () => {
           </div>{" "}
           {/*row */}
           {/* Crop Type input field */}
-          <div class="row">
+          <div class="row mb-5">
             <div class="col-2">
               <label for="crop" class="col-form-label">
                 Type of Crop
@@ -75,7 +75,7 @@ const Homepage = () => {
                   placeholder="Corn"
                 />
                 <button
-                  class="btn btn-outline-secondary"
+                  class="btn btn-outline-secondary hp-button"
                   type="button"
                   id="button-addon2"
                 >
@@ -85,7 +85,7 @@ const Homepage = () => {
             </div>
           </div>
           {/* Used Water input field */}
-          <div class="row">
+          <div class="row mb-5">
             <div class="col-2">
               <label for="water" class="col-form-label">
                 Water Used
@@ -101,7 +101,7 @@ const Homepage = () => {
                   placeholder="10"
                 />
                 <button
-                  class="btn btn-outline-secondary"
+                  class="btn btn-outline-secondary hp-button"
                   type="button"
                   id="button-addon2"
                 >
